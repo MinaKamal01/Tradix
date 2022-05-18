@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  grid-template-rows: 100px 50px auto;
+}
+
+.page::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 50px);
+  height: 2px;
+  background-color: #f5f5f5;
+  top: 100px;
+  left: 50px;
+}
+
+.icon-left {
+  background-color: #0d40c6;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50px;
+  padding: 10px;
+  justify-content: center;
+  grid-row: 1/4;
+  display: grid;
+  grid-template-rows: 150px 70px 70px 70px 70px 1fr;
+}
+
+.fa-chart-line {
+  grid-row: 3;
+}
+
+.fa-repeat {
+  color: white;
+  background-color: #1652f0;
+  padding: 10px 10px 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-1 {
+  grid-row: 2;
+  margin: 0 auto;
+}
+
+.icon-2 {
+  grid-row: 3;
+  margin: 0 auto;
+}
+
+.icon-3 {
+  grid-row: 4;
+  margin: 0 auto;
+}
+
+.icon-4 {
+  grid-row: 5;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: calc(100% - 50px);
+  height: 50px;
+  justify-content: space-between;
+  grid-column: 2/4;
+  grid-row: 1;
+}
+
+.header2 {
+  display: flex;
+  width: 400px;
+  margin: 0;
+  align-items: center;
+  justify-content: flex-end;
+  align-content: center;
+  margin-top: 50px;
+}
+
+i {
+  margin: 10px;
+}
+
+.logo {
+  padding: 20px;
+  font-size: 30px;
+  color: #0d40c6;
+  font-weight: 900;
+}
+
+
+.fa-reddit {
+  font-size: 40px;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+}
+
+.bitcoin {
+  background-color: #eef2fe;
+  padding: 0 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: #4171f3;
+  font-weight: 600;
+}
+
+.usd {
+  padding: 7.5px 10px;
+  border: 1px solid #eef2fe;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #8a9ebb;
+}
+
+.fa-circle-user {
+  font-size: 30px;
+  background-color: white;
+  color: #0d40c6;
+}
+
+.username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-angle-down {
+  display: inline-block;
+}
+
+.saction {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  flex-wrap: nowrap;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 65px 1fr 50px 1fr 50px;
+  grid-template-rows: auto auto;
+}
+
+.sec-left {
+  grid-column: 2;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.sec-right {
+  grid-column: 4;
+  width: 600px;
+}
+
+.wel {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 25px 50px;
+  font-weight: 600;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+p {
+  color: #0d40c6;
+}
+
+.gray {
+  padding: 0 10px;
+  color: #8a9ebb;
+}
+
+.sell-buy {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.buy {
+  background-color: #0d40c6;
+  color: white;
+  width: 250px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.sell {
+  width: 250px;
+  padding: 10px 0;
+  text-align: center;
+  border: 2px solid #f5f7fa;
+  color: #0d40c6;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.input-sell-buy {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 100px !important;
+  background-color: #eef2fe;
+  padding: 10px 20px;
+  color: #8a9ebb;
+  border-radius: 5px;
+  margin: 20px 0 25px;
+  align-items: center;
+}
+
+.in1 {
+  padding: 0 0 0 2px !important;
+  background-color: initial !important;
+}
+
+.exch {
+  width: 100%;
+  background-color: #10d876;
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+}
+
+.lorem {
+  width: 100%;
+  margin: 60px 0;
+  font-size: 13px;
+  color: #8a9ebb;
+  line-height: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-data {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.Buyer {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  font-size: 19px;
+  color: initial;
+}
+
+.Jack {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  color: initial;
+}
+
+.link {
+  position: absolute;
+  left: 70px;
+  top: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: #799cf7;
+}
+
+.Seller {
+  position: absolute;
+  top: 0%;
+  right: 70px;
+  font-size: 19px;
+  color: initial;
+}
+
+.Mina {
+  position: absolute;
+  top: 30px;
+  right: 70px;
+  color: initial;
+}
+
+.link-2 {
+  position: absolute;
+  right: 70px;
+  top: 60px;
+}
+
+.selling-data {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #eef2fe;
+  padding: 20px 20px;
+  color: #8a9ebb;
+  border-radius: 5px;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.selling-data.top {
+  margin-top: 60px;
+  color: #265ef1;
+}
+
+.selling-data .cl5 {
+  color: #fe8095;
+}
+
+.selling-in {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.selling-in-2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
