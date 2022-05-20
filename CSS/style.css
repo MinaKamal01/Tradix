@@ -80,6 +80,8 @@
   grid-column: 2/4;
   grid-row: 1;
   width: 100%;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .header2 {
@@ -89,7 +91,6 @@
   align-items: center;
   justify-content: flex-end;
   align-content: center;
-  margin-top: 50px;
 }
 
 i {
@@ -104,7 +105,7 @@ i {
 }
 
 
-.fa-reddit {
+.fa-money-check-dollar {
   font-size: 40px;
 }
 
